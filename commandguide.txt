@@ -47,6 +47,9 @@ select the multiple lines then click tab
 unindent multiple lines
 select multiple lines then click shift and tab 
 
+to check what upstream and downstream is
+git remote -v
+
 to pull from teachers update, pull from upstream and not origin
 git pull upstream main
 
