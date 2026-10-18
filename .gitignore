@@ -6,3 +6,4 @@ app.db
 auth.db
 requirements.txt
 commandguide.txt
+notes.db 
