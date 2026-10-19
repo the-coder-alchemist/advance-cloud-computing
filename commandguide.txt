@@ -81,6 +81,11 @@ git push origin <branchname>
 
 to delete a branch locally
 git branch -d <branchname>
+add and commit then delete old branch after checkout to main and merge
+git checkout main --switch to main branch
+git pull origin main --to make sure you got the most updated main 
+git merge <other branchname>  --merge the created branch with main
+git push origin main --push the updated main branch to github
 
 to delete a branch remotely
 git push --delete origin <branchname>
@@ -90,3 +95,5 @@ git merge main
 
 to push branch
 git push origin <branchname>
+
+
