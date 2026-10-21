@@ -7,9 +7,8 @@ CREATE TABLE students (
 
 INSERT INTO students (name, course, year)
 VALUES ('Ada Lovelace', 'Cloud Computing', 2);
+INSERT INTO students (name, course, year)
+VALUES ('Alan Turing', 'Artificial Intelligence', 3);
 
 INSERT INTO students (name, course, year)
-VALUES ('Alan Turing', 'Computer Science', 3);
-
-INSERT INTO students (name, course, year)
-VALUES ('Grace Hopper', 'Software Engineering', 1);
+VALUES ('Grace Hopper', 'Software Engineering', 2);

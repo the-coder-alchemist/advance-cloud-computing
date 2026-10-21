@@ -4,6 +4,4 @@ __pycache__/
 *.pyc
 app.db
 auth.db
-requirements.txt
-commandguide.txt
-*.db
+university.db
