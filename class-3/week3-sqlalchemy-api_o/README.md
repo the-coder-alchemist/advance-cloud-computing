@@ -1,6 +1,14 @@
 ## **Week 3** Weekend activity Courses API
 
 
+I have used:
+
+- `main.py` used for the main python file
+- the homework is located inside `\class-3\week3-sqlalchemy-api_o`
+- one `.venv` is used for the overall module as I have noticed in the past that it takes a lot of storage in my limited storage capacity on my machine to have separate .venv per week
+- one `requirements.txt` has been created as I have limited storage capacity in my machine for one load for every week.
+
+
 #### Folder Structure:
 
 ```text
@@ -110,12 +118,12 @@ venv\Lib\site-packages\fastapi\testclient.py:1: StarletteDeprecationWarning: Usi
 | :--- | :--- | :--- |
 | **What is being tested** | A single standalone Python function (`enrolment_is_open`) containing business logic. | The full FastAPI application, including routing, validation, database sessions, and responses. |
 | **Focus** | Checks specific logic boundaries (e.g., before, exactly at, and after a timestamp). | Checks HTTP status codes (`201`, `404`, `409`, `422`), JSON response structures, and database persistence. |
-| **Summary** | Verify that a specific piece of isolated logic/rules works correctly on its own | verify that all parts of your web application work together correctly when an HTTP request comes in from a client |
+| **Summary** | Verify that a specific piece of isolated logic/rules works correctly on its own | verify that all parts of the web application work together correctly when an HTTP request comes in from a client |
 
 
 ####  Tests start with fresh data and do not depend on their execution order
 
-`conftest` starts the test with fresh data. Every time a test function runs, pytest provides a built-in `tmp_path` fixture that creates a brand-new, empty temporary folder and database file (`test.db`). The `app_factory` fixture spins up a fresh FastAPI app and overrides the database dependency (`get_db`) to point exclusively to that temporary database.
+`conftest` starts the test with fresh data. Every time a test function runs, pytest provides a built-in `tmp_path` fixture that creates a brand-new, empty temporary database. The `app_factory` fixture spins up a fresh FastAPI app and overrides the database dependency (`get_db`) to point exclusively to that temporary database.
 
 
 ## **Part 1** Week 3: Homework 1: Books API
@@ -124,4 +132,4 @@ I have used:
 
 - `README.md` for the main document file for the week 3 weekend activity assignment
 - the homework is located inside `\class-3\week3-books-api_o`
-- link for homework for [Week 3: Weekend Activity](../week3-books-api_o/README.md)
+- link for homework for [Week 3: Homework](../week3-books-api_o/README.md)

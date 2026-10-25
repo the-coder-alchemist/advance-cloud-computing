@@ -6,7 +6,7 @@ I have used:
 - `main.py` used for the main python file
 - one database file called `books.db` and table `books` was created 
 - the homework is located inside `\class-3\week3-books-api_o`
-- one `.venv` is used for the overall module as it I have noticed in the past that it takes a lot of storage in my limited storage capacity on my machine to have separate .venv per week
+- one `.venv` is used for the overall module as I have noticed in the past that it takes a lot of storage in my limited storage capacity on my machine to have separate .venv per week
 - one `requirements.txt` has been created as I have limited storage capacity in my machine for one load for every week.
 - validation rules applied for `title` having at least 2 characters, `author` having at least 2 characters and `year` is greater than or equal to 1900
 
@@ -34,7 +34,6 @@ class-3/
         seed.py
         tests/
             conftest.py
-            rules.py
             test_rules.py
             test_api.py
 requirement.txt
