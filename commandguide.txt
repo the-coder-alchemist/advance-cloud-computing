@@ -1,27 +1,22 @@
-git pull - to pull latest changes to repo
-git pull origin main -- alternative pull request 
-python --version  - check which python version 
+- check which python version 
+python --version  
 
-python -m venv .venv   - create virtual environment
+- create virtual environment
+python -m venv .venv   
 
-Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass  - temporary security Bypass
+- Initial code first when getting error when activating virtual environment 
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 
-.venv\Scripts\Activate.  - activate venv
+- activate venv
+.venv\Scripts\Activate.ps1  
 
 pip install -r requirements.txt  - activate venv first then install dependency
 
-deactivate - decavtive already active venv
+- decavtive already active venv
+deactivate 
 
+If activation is blocked, run scripts directly with: .venv\Scripts\python.exe your_script.py
 
-Initial code first when getting error when activating virtual environment: 
-Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
-
-
-activate code in powershell: .venv\Scripts\Activate.ps1
-
-install requirements: pip install -r requirements.txt
-
-deactivate code in powershell: deactivate
 
 if it can't find python:
 step 1: control shift P 
@@ -29,11 +24,9 @@ step 2: select python interpreter
 step 3: enter interpreter path
 step 4: C:\Users\44790\Documents\_MastersDataAalyticsAI\big data analytics\bda\bda\.venv\Scripts\python.exe
 
-If activation is blocked, run scripts directly with: .venv\Scripts\python.exe your_script.py
-
 
 Make sure to install the rquired library if you are seeing something weird with the py scripts
-check requirements.txt for needed libarary, for fulll install code:
+check requirements.txt for needed libarary, for full install code:
 pip install -r requirements.txt
 for per library install
 pip install libraryname
@@ -50,10 +43,13 @@ select multiple lines then click shift and tab
 to check what upstream and downstream is
 git remote -v
 
-to pull from teachers update, pull from upstream and not origin
+git pull - to pull latest changes to repo
+git pull origin main -- alternative pull request 
+
+- to pull from teachers update, pull from upstream and not origin
 git pull upstream main
 
-teacher updates reflected in your private GitHub repository:
+- teacher updates reflected in your private GitHub repository then push to own repository:
 git push origin main
 
 adding my changes and push on my private repository
