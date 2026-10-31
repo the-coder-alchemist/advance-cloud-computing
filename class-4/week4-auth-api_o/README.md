@@ -1,7 +1,7 @@
-### Week 4 Homework : Test Your Authentication API
+## Week 4 Homework : Test Your Authentication API
 
 
-## What the Application Does & Python Version
+#### What the Application Does & Python Version
 
 * **What it does:** This application is a secure FastAPI-based authentication API. It allows users to register accounts with hashed passwords, log in to receive a JSON Web Token (JWT), and access a protected profile endpoint (`/profile/me`) using HTTP Bearer authentication.
 * **Python Version:** Python 3.10 or higher is recommended.
@@ -40,13 +40,13 @@ I have used:
 
 
 
-## Environment Setup, Installing Dependencies & Running the Test
+### Environment Setup, Installing Dependencies & Running the Test
 Follow these steps to set up virtual environment and install the required packages:
 
 1. **Create and activate a virtual environment:**
 ```bash
 python -m venv .venv
-venv\Scripts\activate
+.venv\Scripts\Activate.ps1
 ```
    
 2. **Install dependencies:**
@@ -55,6 +55,7 @@ python -m pip install -r requirements.txt
 ```
 
 3. **Configuring the Secret Key (JWT_SECRET)**
+
 The application requires a secure signing key to create and verify JSON Web Tokens. It must be at least 32 characters long.
 
 Generate a secure secret key:
@@ -78,6 +79,7 @@ $env:JWT_SECRET = "paste-your-generated-value-here"
 ```
 
 4. **Running the Server & Using Swagger UI**
+
 Start the development server using Uvicorn:
 
 ```bash
@@ -92,7 +94,9 @@ Log in: Use POST /auth/login with your credentials to receive an access_token.
 
 Access Profile: Click the Authorize button in Swagger UI, paste your bearer token, and execute GET /profile/me to view your profile data.
 
+
 5. **Running Tests & Results Summary**
+
 The project includes unit tests using pytest and FastAPI TestClient.
 
 Run the tests from the project root:
@@ -121,7 +125,7 @@ tests/test_auth.py::test_wrong_password_login PASSED               [ 83%]
 tests/test_auth.py::test_invalid_registration_data PASSED          [100%]
 ```
 
-## Database Architecture
+### Database Architecture
 
 * `Normal Operation`: SQLite automatically stores user accounts locally in an auth.db file in the project root directory.
 
