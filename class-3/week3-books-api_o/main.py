@@ -49,16 +49,10 @@ def create_book(book_data: schemas.BookCreate, db: Session = Depends(get_db)):
         year=book_data.year
     )
 
-    try:
         # Add the new object to the session, then commit it to the database.
-        db.add(book)
-        db.commit()
+    db.add(book)
+    db.commit()
 
         # Refresh loads database-generated values such as id.
-        db.refresh(book)
-        return book
-
-    except IntegrityError:
-        # If the unique book code is repeated, undo the failed transaction.
-        db.rollback()
-        raise HTTPException(status_code=409, detail="Book code already exists")
+    db.refresh(book)
+    return book
